@@ -1,2 +1,2 @@
 #!/bin/bash
-print "%o\n" $(($#$(echo $WATER | tr 'stir.' '1234'))) | tr '1234567' 'bestchol'
+print "%o\n" $(($#$(echo $WATER | tr 'water' '01234') - $#$(echo $STIR | tr 'stir.' '1234'))) | tr '1234567' 'bestchol'
